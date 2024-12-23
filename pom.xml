@@ -18,7 +18,7 @@
 
   <profiles>
     <profile>
-      <id>SANITY</id>
+      <id>REGRESSION</id>
       <build>
         <!-- To define the plugin version in your parent POM -->
         <pluginManagement>
@@ -29,7 +29,7 @@
               <version>3.5.2</version>
               <configuration>
                 <suiteXmlFiles>
-                  <suiteXmlFile>sanity.xml</suiteXmlFile>
+                  <suiteXmlFile>regression.xml</suiteXmlFile>
                 </suiteXmlFiles>
               </configuration>
             </plugin>
@@ -72,7 +72,36 @@
         </plugins>
       </build>
     </profile>
+
+  <profile>
+    <id>REGRESSION</id>
+    <build>
+      <!-- To define the plugin version in your parent POM -->
+      <pluginManagement>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.5.2</version>
+            <configuration>
+              <suiteXmlFiles>
+                <suiteXmlFile>regression.xml</suiteXmlFile>
+              </suiteXmlFiles>
+            </configuration>
+          </plugin>
+        </plugins>
+      </pluginManagement>
+      <!-- To use the plugin goals in your POM or parent POM -->
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+        </plugin>
+      </plugins>
+    </build>
+  </profile>
   </profiles>
+
 
   <dependencies>
 

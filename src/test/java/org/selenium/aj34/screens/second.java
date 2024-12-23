@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.Test;
 
-public class first {
+public class second {
     @Test
     public void test(){
 
@@ -14,11 +14,11 @@ public class first {
         driver.get("https://testautomationpractice.blogspot.com/");
         System.out.println(driver.getTitle());
         System.out.println("Hello World");
-        System.out.print("Apoorv");
+        System.out.print("SECOND");
+        System.out.println();
         System.out.println("HELLO");
         System.out.println("James");
         System.out.println("First");
-        System.out.println("PROD");
-
+        System.out.println("Smoke");
     }
 }

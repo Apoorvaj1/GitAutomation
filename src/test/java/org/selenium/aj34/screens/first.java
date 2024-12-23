@@ -5,7 +5,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.Test;
 
 public class first {
-    @Test(groups = {"sanity"})
+    @Test
     public void test(){
 
         WebDriver driver = new EdgeDriver();
@@ -19,10 +19,5 @@ public class first {
         System.out.println("James");
         System.out.println("First");
         System.out.println("SANITY");
-    }
-
-    @Test(groups = {"smoke"})
-    public void test1(){
-        System.out.println("SMOKE");
     }
 }

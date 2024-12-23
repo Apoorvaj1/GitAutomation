@@ -19,5 +19,6 @@ public class second {
         System.out.println("HELLO");
         System.out.println("James");
         System.out.println("First");
+        System.out.println("Smoke");
     }
 }
